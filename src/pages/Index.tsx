@@ -1,18 +1,17 @@
 import ModelCard from "@/components/ModelCard";
 import chatllmIcon from "@/assets/chatllm-icon.png";
+import deepseekIcon from "@/assets/deepseek-icon.png";
+import baichuanIcon from "@/assets/baichuan-icon.png";
+import qwenIcon from "@/assets/qwen-icon.png";
+import ernieIcon from "@/assets/ernie-icon.png";
+import copilotIcon from "@/assets/copilot-icon.png";
+import grokIcon from "@/assets/grok-icon.png";
+import metaIcon from "@/assets/meta-icon.png";
+import perplexityIcon from "@/assets/perplexity-icon.png";
+import claudeIcon from "@/assets/claude-icon.png";
+import geminiIcon from "@/assets/gemini-icon.png";
 import {
-  MessageSquare,
-  Sparkles,
-  Brain,
-  Zap,
-  Bot,
-  Globe,
-  Rocket,
   Star,
-  Search,
-  Code,
-  Gem,
-  MessageCircle,
   Wind,
   Lightbulb,
   Bird,
@@ -21,16 +20,16 @@ import {
 
 const models = [
   { name: "ChatLLM", url: "https://chatllm.abacus.ai/", iconImage: chatllmIcon },
-  { name: "Deepseek", url: "https://chat.deepseek.com/", icon: Brain },
-  { name: "Baichuan AI", url: "https://ying.baichuan-ai.com/chat", icon: Sparkles },
-  { name: "Qwen", url: "https://chat.qwen.ai/", icon: Zap },
-  { name: "Ernie", url: "https://ernie.baidu.com/", icon: Bot },
-  { name: "Copilot", url: "https://copilot.microsoft.com/", icon: Code },
-  { name: "Grok", url: "https://grok.com/", icon: Rocket },
-  { name: "Meta", url: "https://www.meta.ai/", icon: Globe },
-  { name: "Perplexity", url: "https://www.perplexity.ai/", icon: Search },
-  { name: "Claude", url: "https://claude.ai/", icon: MessageCircle },
-  { name: "Gemini", url: "https://gemini.google.com/app", icon: Gem },
+  { name: "Deepseek", url: "https://chat.deepseek.com/", iconImage: deepseekIcon },
+  { name: "Baichuan AI", url: "https://ying.baichuan-ai.com/chat", iconImage: baichuanIcon },
+  { name: "Qwen", url: "https://chat.qwen.ai/", iconImage: qwenIcon },
+  { name: "Ernie", url: "https://ernie.baidu.com/", iconImage: ernieIcon },
+  { name: "Copilot", url: "https://copilot.microsoft.com/", iconImage: copilotIcon },
+  { name: "Grok", url: "https://grok.com/", iconImage: grokIcon },
+  { name: "Meta", url: "https://www.meta.ai/", iconImage: metaIcon },
+  { name: "Perplexity", url: "https://www.perplexity.ai/", iconImage: perplexityIcon },
+  { name: "Claude", url: "https://claude.ai/", iconImage: claudeIcon },
+  { name: "Gemini", url: "https://gemini.google.com/app", iconImage: geminiIcon },
   { name: "ChatGPT", url: "https://chatgpt.com/", icon: Star },
   { name: "Mistral", url: "https://chat.mistral.ai/chat", icon: Wind },
   { name: "Gemma Google", url: "https://aistudio.google.com/app/prompts/new_chat?model=gemma-3-27b-it", icon: Lightbulb },
