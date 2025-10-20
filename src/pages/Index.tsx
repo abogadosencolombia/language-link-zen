@@ -10,13 +10,11 @@ import metaIcon from "@/assets/meta-icon.png";
 import perplexityIcon from "@/assets/perplexity-icon.png";
 import claudeIcon from "@/assets/claude-icon.png";
 import geminiIcon from "@/assets/gemini-icon.png";
-import {
-  Star,
-  Wind,
-  Lightbulb,
-  Bird,
-  Scale,
-} from "lucide-react";
+import chatgptIcon from "@/assets/chatgpt-icon.png";
+import mistralIcon from "@/assets/mistral-icon.png";
+import gemmaIcon from "@/assets/gemma-icon.png";
+import falconIcon from "@/assets/falcon-icon.png";
+import lmarenaIcon from "@/assets/lmarena-icon.png";
 
 const models = [
   { name: "ChatLLM", url: "https://chatllm.abacus.ai/", iconImage: chatllmIcon },
@@ -30,11 +28,11 @@ const models = [
   { name: "Perplexity", url: "https://www.perplexity.ai/", iconImage: perplexityIcon },
   { name: "Claude", url: "https://claude.ai/", iconImage: claudeIcon },
   { name: "Gemini", url: "https://gemini.google.com/app", iconImage: geminiIcon },
-  { name: "ChatGPT", url: "https://chatgpt.com/", icon: Star },
-  { name: "Mistral", url: "https://chat.mistral.ai/chat", icon: Wind },
-  { name: "Gemma Google", url: "https://aistudio.google.com/app/prompts/new_chat?model=gemma-3-27b-it", icon: Lightbulb },
-  { name: "Falcon", url: "https://chat.falconllm.tii.ae/", icon: Bird },
-  { name: "LMArena", url: "https://lmarena.ai/", icon: Scale },
+  { name: "ChatGPT", url: "https://chatgpt.com/", iconImage: chatgptIcon },
+  { name: "Mistral", url: "https://chat.mistral.ai/chat", iconImage: mistralIcon },
+  { name: "Gemma Google", url: "https://aistudio.google.com/app/prompts/new_chat?model=gemma-3-27b-it", iconImage: gemmaIcon },
+  { name: "Falcon", url: "https://chat.falconllm.tii.ae/", iconImage: falconIcon },
+  { name: "LMArena", url: "https://lmarena.ai/", iconImage: lmarenaIcon },
 ];
 
 const Index = () => {
@@ -58,7 +56,6 @@ const Index = () => {
               key={model.name}
               name={model.name}
               url={model.url}
-              icon={model.icon}
               iconImage={model.iconImage}
               delay={index * 50}
             />
