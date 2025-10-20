@@ -1,4 +1,5 @@
 import ModelCard from "@/components/ModelCard";
+import chatllmIcon from "@/assets/chatllm-icon.png";
 import {
   MessageSquare,
   Sparkles,
@@ -19,7 +20,7 @@ import {
 } from "lucide-react";
 
 const models = [
-  { name: "ChatLLM", url: "https://chatllm.abacus.ai/", icon: MessageSquare },
+  { name: "ChatLLM", url: "https://chatllm.abacus.ai/", iconImage: chatllmIcon },
   { name: "Deepseek", url: "https://chat.deepseek.com/", icon: Brain },
   { name: "Baichuan AI", url: "https://ying.baichuan-ai.com/chat", icon: Sparkles },
   { name: "Qwen", url: "https://chat.qwen.ai/", icon: Zap },
@@ -59,6 +60,7 @@ const Index = () => {
               name={model.name}
               url={model.url}
               icon={model.icon}
+              iconImage={model.iconImage}
               delay={index * 50}
             />
           ))}

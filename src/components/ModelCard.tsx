@@ -4,11 +4,12 @@ import { Card } from "@/components/ui/card";
 interface ModelCardProps {
   name: string;
   url: string;
-  icon: LucideIcon;
+  icon?: LucideIcon;
+  iconImage?: string;
   delay?: number;
 }
 
-const ModelCard = ({ name, url, icon: Icon, delay = 0 }: ModelCardProps) => {
+const ModelCard = ({ name, url, icon: Icon, iconImage, delay = 0 }: ModelCardProps) => {
   return (
     <a
       href={url}
@@ -22,7 +23,11 @@ const ModelCard = ({ name, url, icon: Icon, delay = 0 }: ModelCardProps) => {
           <div className="relative">
             <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl group-hover:bg-primary/40 transition-all duration-300 scale-75 group-hover:scale-100" />
             <div className="relative bg-secondary/50 p-6 rounded-2xl group-hover:bg-primary/20 transition-all duration-300">
-              <Icon className="w-12 h-12 text-foreground group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
+              {iconImage ? (
+                <img src={iconImage} alt={`${name} icon`} className="w-12 h-12 object-contain" />
+              ) : Icon ? (
+                <Icon className="w-12 h-12 text-foreground group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
+              ) : null}
             </div>
           </div>
           
